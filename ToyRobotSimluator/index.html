@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	  <meta charset="utf-8">
+      <title>Mr Roboto Challenge</title>
+   </head>
+   <body>
+      <div class="controls" >
+         <label>X:</label>
+         <select id="x">
+            <option value="0">0</option>
+            <option value="20">1</option>
+            <option value="40">2</option>
+            <option value="60">3</option>
+            <option value="80">4</option>
+         </select>
+         <label>Y:</label>
+         <select id="y">
+            <option value="80">0</option>
+            <option value="60">1</option>
+            <option value="40">2</option>
+            <option value="20">3</option>
+            <option value="0">4</option>
+         </select>
+         <label>Direction:</label>
+         <select id="f">
+            <option value="north">North</option>
+            <option value="south">South</option>
+            <option value="west">West</option>
+            <option value="east">East</option>
+         </select>
+	  <br/><br/>
+         <button onclick="placeRobot()">Place Mr Roboto</button>
+      </div>
+      <div id="container">
+         <div id="board">
+            <div id="roboto"></div>
+         </div>
+      </div>
+      <div id="reportLog"></div>
+      <div class="controls">
+         <input type="button" value="↰" onclick="turnLeft()">
+         <input type="button" value="↥" onclick="move()">
+         <input type="button" value="↱" onClick="turnRight()">
+      </div>
+      <script src="roboto.js"></script>
+      <link href="style.css" rel="stylesheet">
+   </body>
+</html>

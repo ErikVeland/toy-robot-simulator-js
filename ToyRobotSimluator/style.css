@@ -1,0 +1,106 @@
+.controls {
+	margin: 100px auto;
+	text-align: center;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+button,
+input[type=button] {
+	font-size: 1.4em;
+	-webkit-appearance: none;
+	border: none;
+	background: rgba(0,0,0,.1);
+	border-radius: 4px;
+	padding: .5em;
+	min-height: 2.8em;
+	min-width: 3em;
+	border: 1px solid rgba(0,0,0,.2);
+}
+
+label {
+	margin-left: 30px;
+}
+
+select {
+	margin: 0 1em;
+	font-size: 1em;
+}
+
+#roboto {
+	width: 20%;
+	height: 20%;
+	border-radius: 100%;
+	position: absolute;
+	display: none;
+}
+
+#container {
+	position: relative;
+	width: 500px;
+	height: 500px;
+	left: 50%;
+	transform: translate(-250px, 0);
+}
+
+#reportLog {
+	text-align: center;
+}
+
+#board {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	background-image: -moz-linear-gradient(45deg, #268c82 25%, transparent 25%, transparent 75%, #268c82 75%, #268c82 100%), -moz-linear-gradient(45deg, #268c82 25%, transparent 25%, transparent 75%, #268c82 75%, #268c82 100%);
+	background-image: -webkit-linear-gradient(45deg, #268c82 25%, transparent 25%, transparent 75%, #268c82 75%, #268c82 100%), -webkit-linear-gradient(45deg, #268c82 25%, transparent 25%, transparent 75%, #268c82 75%, #268c82 100%);
+	-moz-background-size: 200px 200px;
+	background-size: 200px 200px;
+	-webkit-background-size: 200px 200px;
+	background-position: 0 0, 100px 100px;
+	border: 1px solid #268c82;
+	border-radius: 4px;
+	transform: rotateX(60deg) rotateY(0deg) rotateZ(-45deg);
+	transform-style: preserve-3d;
+}
+
+.North {
+	background: url('n.svg') no-repeat left top;
+	transform: rotateX(-60deg) rotateY(0deg) rotateZ(22.5deg) translate3d(-10px, -10px, 30px);
+	transform-style: preserve-3d;
+}
+
+.South {
+	background: url('s.svg') no-repeat left top;
+	transform: rotateX(-60deg) rotateY(0deg) rotateZ(22.5deg) translate3d(-10px, -10px, 30px);
+	transform-style: preserve-3d;
+}
+
+.East {
+	background: url('e.svg') no-repeat left top;
+	transform: rotateX(-60deg) rotateY(0deg) rotateZ(22.5deg) translate3d(-10px, -10px, 30px);
+	transform-style: preserve-3d;
+}
+
+.West {
+	background: url('w.svg') no-repeat left top;
+	transform: rotateX(-60deg) rotateY(0deg) rotateZ(22.5deg) translate3d(-10px, -10px, 30px);
+	transform-style: preserve-3d;
+}
+
+.edge {
+	animation-name: color;
+	animation-duration: 3s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes color {
+	0% {
+		background-color: transparent;
+	}
+	50% {
+		background-color: red;
+	}
+	100 {
+		background-color: transparent;
+	}
+}

@@ -114,7 +114,7 @@ function turnRight() {
 //Where is Mr Roboto? 
 function report() {
 	xRealPos = (xPos / 2) / 10;
-	yRealPos = (xPos / 2) / 10;
+	yRealPos = (((100 - yPos)/ 2) / 10) - 1;
     reportLog.innerHTML = `PLACE  ${xRealPos}, ${yRealPos}, ${direction}`
 }
 

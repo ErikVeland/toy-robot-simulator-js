@@ -21,7 +21,7 @@ GUI for control, or issue commands in console:
 - turnRight();
 - move();
 
-// Note: Safari and Firefox need to disable local file restrictions from Develop menu
+*Note: Safari and Firefox need to disable local file restrictions from Develop menu*
 
 # Toy Robot Simulator Requirements
 
@@ -45,7 +45,7 @@ Create an application that can read in commands of the following form:
 - A robot that is not on the table can choose to ignore the MOVE, LEFT, RIGHT and REPORT commands.
 - The robot must not fall off the table during movement. This also includes the initial placement of the toy robot. Any move that would cause the robot to fall must be ignored.
 
-##Examples
+## Examples
 
 Example Input and Output:
 a)
